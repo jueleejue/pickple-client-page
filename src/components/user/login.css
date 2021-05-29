@@ -1,0 +1,196 @@
+
+body {
+    width: 100%;
+    height: 100%;
+  }
+
+  .LoginLogoWrap{
+    display: flex;
+    justify-content: center;
+    padding:1.3rem;
+    align-items: center;
+  }
+
+  .LoginWapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../../assets/img/login_back1.png");
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+  
+  }
+  
+  .modal-dialog.modal-fullsize{
+    top: 5%;
+    width: 465px;
+  }
+  
+  .LoginModal {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    outline: 0;
+    align-items: center;
+}
+
+
+  .LoginContentWrap{
+
+    min-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .LoginTitle {
+    text-align: center;
+    word-break: break-word;
+    margin-top: 4rem;
+    margin-bottom: 17px;
+  }
+  
+  
+  .LoginTitle>h1{
+    font-family:-apple-system, Helvetica, Arial, "hiragino kaku gothic pro", meiryo, "Microsoft YaHei", "ms pgothic", "Apple SD Gothic Neo", "Nanum Gothic", "Malgun Gothic", sans-serif body
+    sans-serif ;
+    line-height: 1.54;
+    font-size: 26px;
+    font-weight:550;
+    color:#333;
+  }
+  .LoginTitle>h2{
+      margin-top: 16px;
+      line-height: 1.5;
+      font-size: 16px;
+      font-weight: 400;
+      color: #666;
+  
+  }
+  
+  .LoginFooter {
+    margin-top: 23px;
+    width: auto;
+    min-height: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+    white-space:nowrap
+  }
+  
+  .LoginText{
+    line-height: 1.5;
+    font-size: 13px;
+    font-weight: 600;
+    color: #666;
+    padding: 17px;
+    text-decoration: underline;
+  
+  }
+  .LoginLabel{
+    display: inline-block;
+    width: 100%;
+    color: #767676;
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 0.3em;
+
+  }
+  .LoginInputWrap {
+    width: 100%;
+    min-height: 16rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2.3em 2.3em 2.3em;
+    align-items: center;
+}
+
+.LoginInput {
+  display: inline-block;
+  background: #fff;
+  height: 2em;
+  width: 249px;
+  overflow: hidden;
+  border: 0;
+  margin: 1.5rem 0 0.5rem 0;
+  border: 1px solid #b3b3b3;
+  border-radius: 15px;
+  padding: 1.35rem;
+}
+.LoginInput:focus {outline:none;}
+  .SeInput{
+    width: 100%;
+    height: 3.3em;
+    margin: 0.8em 0 0.8em 0;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 7px;
+    border: 1px solid #e1e2e3;
+    background-color: #fff;
+    font-size: 15px;
+    color: #333;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+    resize: none;
+
+  }
+  
+.SeLoginWarp{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+  .SeLogin{
+    width:249px;
+    height: 54px;
+    border: 0;
+    border-radius: 7px;
+    background-color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 1em;
+    cursor: pointer;
+  }
+  .NaverLogin{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: 54px;
+    border: 0;
+    border-radius: 27px;
+    background-color: #2DB400;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 1em;
+    cursor: pointer;
+
+  }
+  
+  
+  /* 모달 위치랑 사이즈  */
+  @media screen and (max-width: 767px){
+ 
+  }
+  
+  

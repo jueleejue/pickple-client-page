@@ -1,0 +1,247 @@
+.p-post-tit {
+    width: 100%;
+    padding: 1rem 0.5rem;
+    text-align: left;
+    position: relative;
+    margin-bottom: 1.2rem;
+    font-size: 18px;
+}
+.p-post-tit>h2 {
+    /* margin-bottom: 0.8rem; */
+    font-size: 20px;
+    color: #636161;
+    font-weight: 500;
+    border-left: 2px solid #636161;
+    padding-left: 0.5rem;
+}
+
+
+.p-post-wrap {
+    width: 100%;
+    /* padding: 3rem 0 3rem 0; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.p-post-sub-wrap{
+    width: 60%;
+}
+
+
+.p-post-sub-tit>h3 {
+    width: 100%;
+    margin: 0.5rem 0 0.5rem 0;
+    font-size: 1.1rem;
+    color: #000;
+    font-weight: 540;
+}
+
+
+.p-post-sub-tit{
+    width: 100%;
+    margin-bottom: 2rem;
+    font-size: 16px;
+    display: block;
+}
+
+
+
+.p-post-sub-tit-es {
+    margin: 0 3px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fd1212 !important;
+    line-height: 25px;
+}
+.p-post-contact{
+    display: flex;
+    flex-direction: column;
+
+}
+.p-post-contact-item {
+    display: flex;
+    justify-content: center;
+    /* padding-left: 0.57em; */
+    min-height: 3.8em;
+    align-items: center;
+}
+.p-post-contact-item>strong{
+    font-size: 14px;
+    width: 13%;
+    line-height: 2;
+    color: #636161;
+    font-weight: 550;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 0.5rem;
+}
+
+.p-post-contact-input {
+    display: inline-block;
+    background: #fff;
+    height: 2em;
+    width: 73%;
+    overflow: hidden;
+    text-align: center;
+    border: 0;
+    border-bottom: 1px solid #b3b3b3;
+    /* border-radius: 7px; */
+    /* margin-left: 1em; */
+}
+
+.p-error-msg{
+    font-size: 14px;
+    color: red;
+    text-align: center;
+}
+
+.p-post-contact-input:focus{
+    outline: none;
+}
+
+.p-post-isopen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+}
+.p-post-isopen>strong{
+    font-size: 16px;
+    color: #636161;
+    line-height: 3;
+    font-weight: 550;
+    
+    /* #3366ff */
+}
+
+.p-post-area{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 0 7rem 0;
+}
+
+.p-post-btn{
+    width: 50%;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 15px;
+    border: solid 1.5px  #3ba3c7;
+    border-radius: 1rem;
+    color: #3ba3c7;
+    font-weight: 600;
+    background-color: #fff;
+}
+
+
+@media screen and (max-width: 1200px){
+    
+
+    .p-post-contact{
+        padding:0px;
+    }
+    .p-post-contact-item>strong{
+        width: 20%;
+    }
+
+}
+
+
+@media screen and (max-width: 789px){
+    
+
+    .p-post-wrap{
+        padding: 0px;
+    }
+    .PostTitle{
+        text-align: center;
+        color: #636161;
+        font-size: 20px;
+        margin-bottom: 1rem;
+    }
+    .PostTitle>h2{
+        color: #636161;
+        font-size: 20px;
+    }
+    
+    .p-post-sub-wrap{
+        width: 100%;
+    }
+    
+
+   .p-post-sub-tit{
+    width: 100%;
+    margin: 0px;
+    }
+    .p-post-contact{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        padding:0.5em 0 0.5em 0;
+    
+    }
+    .p-post-contact-item>strong{
+        font-size: 0.8em;
+        width: 20%;
+        color: #000;
+        font-weight: 600;
+    }
+
+
+.p-post-contact-input {
+    display: inline-block;
+    background: #fff;
+    height: 2em;
+    width: 73%;
+    overflow: hidden;
+    text-align: center;
+    border: 0;
+    border-bottom: 1px solid #b3b3b3;
+    /* border-radius: 7px; */
+    /* margin-left: 1em; */
+}
+    .PostBottomWarpper{
+        width: 100%;
+        padding: 1.5rem;
+    }
+    .PostBottomTitle{
+    font-size: 0.8rem;
+    color: rgb(80, 82, 81);
+    line-height: 1.7;
+    margin:0.2rem;
+    }
+    .cat-select-grid>li{
+        width: 50%;
+    }
+    .p-post-sub-tit>h3{
+       font-size: 16.8px;
+        }
+  .PostWarpper{
+      padding:0px;
+  }
+  .p-post-sub-tit .PostSubTitleEs {
+    margin: 0 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color:  #3366ff!important;
+    line-height: 20px;
+}
+
+.PostButton{
+    width: 100px;
+    
+}
+
+.PostDetailWarpper{
+    flex-direction: column;
+ }
+
+ .PostDetailItem{
+    width: 100%;
+    margin: 2rem 0 2rem 0;
+}
+}
+
+

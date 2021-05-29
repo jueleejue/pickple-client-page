@@ -1,0 +1,344 @@
+ol, ul,li,input {
+    list-style: none;
+    margin:0px; padding:0px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+         appearance: none;
+}
+.PostCheck{
+    line-height: 2;
+    color: red;
+    font-size: 20px;
+}
+
+
+.PostWarpper {
+    width: 100%;
+    padding: 1.5rem 0rem 3rem 0rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.PostContainer{
+    width: 60%;
+}
+
+
+.PostEditWarpper{
+    width: 100%;
+    padding:1rem 0rem 1rem 0rem;
+}
+
+
+.PostTitle{
+    width: 100%;
+    padding: 1.5rem 1.2rem;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    position: relative;
+    margin-bottom: 1.2rem;
+    font-size: 18px;
+}
+
+.PostTitle>h2{
+    margin-bottom: 0.8rem;
+    font-size: 28px;
+    color: #000;
+    font-weight: 650;
+}
+.PostSubTitle{
+    width: 100%;
+    margin-bottom: 1.3rem;
+    display: block;
+}
+.PostSubTitle>h3{
+    width: 100%;
+    margin: 1rem 0 1rem 0;
+    font-size: 18px;
+    color: #000;
+    font-weight: 600;
+}
+
+.PostTopWarpper{
+    width: 100%;
+    padding: 2rem;
+}
+.PostBottomWarpper{
+    width: 100%;
+    display: flex;
+    padding: 1.5rem 0 1.5rem 0;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+
+.PostTopItem{
+    display: flex;
+    justify-content: center;
+}
+
+.PostBottomItem{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0 1rem 0;
+}
+
+.cat-select-wrap{
+        width: 100%;
+    
+}
+.cat-select-grid{
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+}
+.cat-select-grid>li{
+    width: 25%;
+    padding: 0.67%;
+}
+.cat-select-type{
+    display: block;
+    position: relative;
+    padding: 15px;
+    font-size: 17px;
+    text-align: center;
+}
+.cat-select-type>li{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 1.2px solid #d4d3d3;
+    border-radius: 9em;
+}
+
+
+
+.rec-detail-text{
+    display: block;
+    width: 100%;
+    height: 25rem;
+    padding: 0.4rem 0.9rem;
+    border: 1px solid #a8a7a7;
+    border-radius: 5px;
+    font-size: 15px;
+    box-sizing: border-box;
+    outline: none;
+}
+.PostSubTitle> .PostSubTitleEs {
+    margin: 0 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color:  #3366ff !important;
+    line-height: 30px;
+}
+.rec-file-container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 10rem;
+    margin: 1.5rem 0 5rem 0;
+ 
+}
+
+
+.rec-file-wrapper-left{
+    position: relative;
+    width: 33%;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #a5a5a5;
+}
+
+.rec-file-wrapper-right {
+    position: relative;
+    width: 80%;
+    border: 1px solid #dcdcdc;
+    font-size: 15px;
+    line-height: 1.7;
+    border-radius: 0 5px 5px 0;
+    color: #a5a5a5;}
+
+.rec-file-button{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background-color: #fff;
+    border-radius: 5px 0 0 5px ;
+    font-size: 15px;
+    color: #3ba3c7;
+    font-weight: 600;
+    border:1px solid  #dcdcdc;
+    border-right: none;
+}
+
+/* 모집인원  */
+.PostDetailWarpper{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 2rem 0 2rem 0;
+}
+.PostDetailCount{
+    display: inline-block;
+    width: 7rem;   
+    font-size: 1.2rem;
+    color: rgb(80, 82, 81);
+    line-height: 2.5rem;
+    margin:0.3rem;
+
+}
+
+.PostDetailItem{
+    width: 50%;
+    display: block;
+    text-align: center;
+    margin: 1rem 0 1rem 0;
+}
+
+.PostDetailText{
+    font-size: 1rem;
+    color: rgb(80, 82, 81);
+    line-height: 2.5rem;
+    margin: 0.3rem;
+}
+
+
+
+
+.react-datepicker__input-container{
+    display: flex;
+    justify-content: center;
+}
+.PostDate{
+    display: flex;
+    justify-content: center;
+    padding: 7px 14px;
+    border: 1px solid #acabab;
+    border-radius: 5px;
+    font-size: 15px;
+    box-sizing: border-box;
+    outline: none;
+    text-align: center;
+}
+.PostBottomTitle {
+    font-size: 0.9rem;
+    color: rgb(80, 82, 81);
+    line-height: 1.5;
+    margin: 0.3rem;
+    text-align: center;
+}
+
+
+.PostArea{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 0 7rem 0;
+}
+
+.PostBtn{
+    width: 50%;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 15px;
+    border: solid 1.5px  #3ba3c7;
+    border-radius: 1rem;
+    color: #3ba3c7;
+    font-weight: 600;
+    background-color: #fff;
+}
+
+
+
+
+
+/* 반응형 */
+@media screen and (max-width: 800px){
+    
+    .PostContainer {
+        width: 100%;
+    }
+
+
+    .PostCheck{
+        line-height: 2;
+        color: red;
+        font-size: 15px;
+    }
+
+    .PostTitle{
+        text-align: center;
+        color: #636161;
+        font-size: 20px;
+        margin-bottom: 1rem;
+    }
+    .PostTitle>h2{
+        color: #636161;
+        font-size: 20px;
+    }
+    .PostDate{
+        width: 70%;
+        margin: auto;
+    }
+    
+   .PostSubTitle{
+    width: 100%;
+    margin: 0px;
+    }
+
+    .PostBottomWarpper{
+        width: 100%;
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+    .PostBottomTitle{
+    font-size: 0.8rem;
+    color: rgb(80, 82, 81);
+    line-height: 1.7;
+    margin:0.2rem;
+    }
+    .cat-select-grid>li{
+        width: 50%;
+    }
+    .PostSubTitle>h3{
+       font-size: 16.8px;
+        }
+  .PostWarpper{
+      padding:0px;
+  }
+  .PostBottomItem{
+      flex-direction: column;
+  }
+  .PostSubTitle .PostSubTitleEs {
+    margin: 0 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color:  #3366ff!important;
+    line-height: 20px;
+}
+
+.PostButton{
+    width: 100px;
+    
+}
+
+.PostDetailWarpper{
+    flex-direction: column;
+ }
+
+ .PostDetailItem{
+    width: 100%;
+    margin: 2rem 0 2rem 0;
+}
+}
+

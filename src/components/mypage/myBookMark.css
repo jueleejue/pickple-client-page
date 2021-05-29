@@ -1,0 +1,207 @@
+/* 회색:#636161
+   배경색:3366ff
+*/
+.mypage-bookmark-container{
+    padding:0.8rem 0 0.8rem 0;
+    min-height: 30rem;
+}
+
+.mypage-bookmark-top-tit{
+  
+    display: flex;
+    justify-content: flex-start;
+    padding:1rem 1rem 0 1rem;
+    font-size: 1.6rem;
+    font-weight: 550;
+  
+
+}
+
+
+.mypage-bookmark-top-tit>strong{
+    line-height: 2;
+    color: #000000;
+}
+
+.mypage-bookmark-content-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2.5rem 1rem 2.5rem 1rem;
+}
+
+
+
+
+.mypage-bookmark-content-sub {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    float: left;
+    flex-direction: column;
+    margin-right: 1rem;
+    min-height: 6rem;
+    width: 31.3%;
+    align-items: center;
+    padding: 1.2rem 1rem 0.5rem 1rem;
+    background-color: #fff;
+    margin-bottom: 0.5rem;
+    border: 0.6px solid rgb(212, 209, 209);
+}
+
+
+.mypage-bookmark-content-align {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    min-height: 53px;
+}
+
+.mypage-bookmark-content-align>a {
+    display: flex;
+    width:70%;
+    align-items: center;
+}
+
+
+.mypage-bookmark-content-tit{
+    width: 100%;
+    padding:0.5rem;
+    font-size: 17px;
+    font-weight: 550;
+    padding-left: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.mypage-bookmark-content-sub>span{
+    display: flex;
+    width: 9%;
+    justify-content: center;
+    
+    border-right: 1px solid #b1acac;
+    align-items: center;
+    padding:0.5rem 0.3rem;
+    font-size: 13px;
+    font-weight: 550;
+    color: rgb(97, 95, 95);
+    cursor: pointer;
+}
+
+.mypage-bookmark-content-state {
+    display: flex;
+    width: 30%;
+    padding: 0.15rem;
+    justify-content: flex-end;
+}
+
+.mypage-bookmark-state-delete{
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    color: #636161;
+    margin-left: 0.5rem;
+    text-align: center;
+    background-color: #dddee0;
+    font-weight: 550;
+}
+
+.mypage-bookmark-state-txt{
+    display: flex;
+    width: 100%;
+    justify-content:flex-end;
+    align-items: center;
+    font-size: 17px;
+    color: #636161;
+    font-weight: 600;
+}
+.mypage-bookmark-state-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    border: 0;
+    padding:0.5rem 0;
+
+}
+.mypage-bookmark-date-wrap{
+    display: flex;
+    padding:0.2rem 0 0.2rem 0;
+    width: 100%;
+    margin: 0.8rem 0 0.5rem 0;
+    }
+
+
+.mypage-bookmark-date-txt{
+    font-size: 14px;
+    background-color: #f5fffc;
+    color: #636161;
+    line-height: 2;
+    padding:0 0.5rem 0rem 0.5rem;
+}
+@media screen and (max-width: 1000px){
+    .mypage-bookmark-content-sub {
+        width: 100%;
+        padding: 1.2rem 1rem 0.5rem 1rem;
+    }
+} 
+
+
+@media screen and (max-width: 789px){
+    
+    .mypage-bookmark-container{
+        padding:0px;
+    }
+
+    .mypage--bookmark-mid-tit{
+
+        font-size: 8px;
+    }
+
+    .mypage-bookmark-content-sub {
+        width: 100%;
+        padding: 1rem 0.5rem 0.5rem 1rem;
+        margin-right: 0;
+    }
+
+    .mypage-bookmark-content-sub>span{
+        display: none;
+    }
+
+    .mypage-bookmark-top-tit{
+        font-size: 1.2rem;
+    }
+
+    .mypage-bookmark-content-tit{
+        font-size: 13px;
+        padding-left: 0.3rem;
+        padding-right: 0;
+    }
+
+
+    .mypage-bookmark-content-wrap{
+        padding: 2.5rem 0.3rem 2.5rem 0.3rem;
+    }
+
+
+    
+.mypage-bookmark-content-state{
+    display: flex;
+    width: 35%;
+}
+.mypage-bookmark-state-txt{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: #636161;
+    font-weight: 600;
+}
+.mypage-bookmark-state-btn{
+
+    width: 50%;
+
+    font-size: 10px;
+  
+}
+
+    }

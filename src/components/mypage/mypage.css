@@ -1,0 +1,144 @@
+.mypage-container{
+    /* background-color:#f0f0f0; */
+}
+.mypage-tit-wrap{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding:3rem 0.5rem 2rem 0.5rem;
+   
+    letter-spacing: 0;
+    word-spacing: 0;
+}
+.mypage-tit-wrap>a{
+    font-size: 2.7rem;
+    font-weight: 600;
+    color: #373737;
+    vertical-align: middle;
+    display: inline-block;
+    text-decoration: none;
+}
+.mypage-tit-wrap>a:hover {
+    text-decoration: none;
+    color: #373737;
+ }
+
+
+.mapage-info-container{
+    width: 100%;
+    display: flex;
+}
+.mypage-left-wrap{
+    width: 100%;
+}
+
+.mypage-right-wrap{
+    width: 78%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mypage-left-top-info{
+    width: 100%;
+    height: auto;
+    padding:1.5rem 0 1.5rem 0;
+
+}
+.mypage-left-top-tit{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    color: rgb(184, 184, 184);
+    padding:0.35rem 0 0.35rem 0;
+}
+
+.mypage-left-top-tit>span{
+    font-size: 15px;
+    line-height: 2;
+    font-weight: 500;
+}
+.mypage-left-menu-wrap{
+    display: flex;
+    border-bottom: 1px solid #dadada;
+}
+.mypage-left-menu-wrap>a:hover{
+    text-decoration: none;
+
+}
+
+.mypage-left-menu-item{
+    padding: 0.4rem 0.4rem 0.4rem 0.8rem;
+    vertical-align: middle;
+
+}
+.mypage-left-menu-test{
+  /* background-color: aqua; */
+  border-bottom: 3px solid #00a878;
+  /* padding: 0.4rem 0.4rem 0.4rem 0.8rem;
+    vertical-align: middle; */
+}
+
+
+.mypage-left-menu-item>span{
+    font-size: 20px;
+    color: #000;
+    font-weight: 600;
+    line-height: 2;
+}
+.mypage-left-menu-item:hover{
+    color: #00a878;
+    cursor: pointer;
+    background-color: #ffffff;
+  
+  
+}
+.mypage-left-menu-item>span:hover{
+    color: #00a878;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+    
+
+
+/* 반응형 */
+@media screen and (max-width: 789px){
+
+    .mapage-info-container{
+        flex-direction: column;
+    }
+    .mypage-left-wrap{
+        width: 100%;
+    }
+    .mypage-tit-wrap>a{
+        font-size: 1.8rem;
+    }
+    .mypage-left-menu-wrap{
+        display: inline-block;
+        width: 100%;
+    }
+    .mypage-left-menu-item{
+        width: 50%;
+        float: left;
+        text-align: center;
+      }
+      .mypage-left-top-info{
+          padding:0.5rem 0 0.5rem 0;
+      }
+      .mypage-left-menu-test{
+        border-bottom: none;
+      }
+      .mypage-left-menu-item>span{
+        font-size: 14px;
+      }
+    .mypage-left-top-tit{
+        display: none;
+    }
+    .mypage-right-wrap{
+        width: 100%;
+    }
+    
+}
+
+

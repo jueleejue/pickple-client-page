@@ -1,0 +1,234 @@
+.mypage-user-container{
+    padding:0.8rem 0 0.8rem 0;
+    min-height: 40rem;
+    margin-bottom: 5rem;
+}
+.mypage-user-top-tit{
+    display: flex;
+    justify-content: flex-start;
+    padding: 1rem 1rem 0 1rem;
+    font-size: 1.6rem;
+    font-weight: 550;
+}
+
+.mypage-user-top-tit>strong{
+    line-height: 2;
+    color: #000000;
+}
+.mypage-user-content-wrap{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mypage-user-content-sub{
+    width: 100%;
+    margin-top: 2rem;
+    min-height: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 10rem;
+    justify-content: center;
+}
+.mypage-user-content-item{
+    width: 80%;
+    display: flex;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    border: 1px solid rgb(172, 164, 164);
+    min-height: 5.5rem;
+    margin-top: 0.8rem;
+    border-radius: 8px;
+}
+.mypage-user-content-left {
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+
+
+.mypage-user-content-right{
+    display: flex;
+    width: 40%;
+}
+.mypage-user-content-tit {
+    width: 25%;
+    display: flex;
+    font-size: 15px;
+    font-weight: 550;
+    justify-content: flex-start;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mypage-user-content-tit>strong {
+    padding: 0.5rem;
+    font-size: 13px;
+    font-weight: 550;
+    text-align: center;
+    color: #000;
+}
+.mypage-user-content-txt {
+    width: auto;
+    width: 75%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 13px;
+    color: #686868;
+    vertical-align: middle;
+}
+
+.mypage-user-content-right{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.mypage-user-contract-wrap {
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+
+.mypage-user-contract-state{
+    display: flex;
+    width: 30%;
+    justify-content: center;
+}
+
+.mypage-user-contract-state>strong{
+    font-size: 13.2px;
+    color: #00a878;
+    line-height: 2;
+    font-weight: 550;
+    text-align: center;
+}
+
+.mypage-user-contract-profile{
+    display: flex;
+    width: 70%;
+    justify-content: center;
+}
+
+.mypage-user-contract-profile>strong {
+    font-size: 13.2px;
+    /* color: #686868; */
+    line-height: 2;
+    color: #fff;
+    padding: 0.4rem;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 7px;
+    background-color: #00a878;
+    /* border: 1px solid #3ba3c7; */
+}
+
+.mypage-user-after-wrap{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.mypage-user-after-none{
+    font-size: 11.5px;
+    color: #686868;
+    line-height: 2;
+    text-align: center;
+    padding:0 0 0 0.5rem;
+}
+
+.mypage-user-review-wrap{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.mypage-user-after-review{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+
+.mypage-user-after-review>strong{
+    font-size: 13.2px;
+    color: #686868;
+    line-height: 2;
+    padding: 0.4rem;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 7px;
+    border: 1px solid #3ba3c7;
+    cursor: pointer;
+}
+
+.mypage-user-review-state{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+
+
+
+.mypage-user-review-state>strong{
+    font-size: 11.5px;
+    color: #686868;
+    line-height: 2;
+    text-align: center;
+    padding:0 0 0 0.5rem;
+    cursor: pointer;
+}
+
+.mypage-user-contract-btn{
+    font-size: 13.2px;
+    color: #686868;
+    line-height: 2;
+    text-align: center;
+    padding:0 0 0 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 1000px){
+
+} 
+
+@media screen and (max-width: 789px){
+    .mypage-user-content-item {
+        width: 96%;
+        padding: 0.2rem;
+        flex-direction: column;
+    }
+    .mypage-user-content-right{
+        flex-direction: row;
+    }
+    .mypage-user-content-left {
+        height: 50%;
+        padding: 0.8rem 0.3rem 0.8rem 0.3rem;
+        width: 100%;
+    }
+    .mypage-user-contract-wrap{
+        width: 100%;
+        padding: 0.38rem;
+        border-right: 1px solid #b4b4b4;
+    }
+    .mypage-user-after-wrap {
+        width: 100%;
+        margin: 0.5rem;
+    }
+    .mypage-user-contract-profile>strong{
+        font-size: 11px;
+    }
+    .mypage-user-after-review>strong {
+        font-size: 11px;
+    }
+
+    }

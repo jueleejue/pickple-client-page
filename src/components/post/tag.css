@@ -1,0 +1,96 @@
+.tag-input-wrap{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.tag-input{
+ 
+    width:60%;
+    height: 2.5rem;
+    text-align: center;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 1rem;
+    border-bottom: 1px solid rgb(170, 168, 168);
+    color:rgb(71, 71, 71);
+
+}
+.tag-input:focus{
+    outline: none;
+}
+
+.tag-content-wrap{
+    display: flex;
+    flex-direction: row;
+    min-height: 6rem;
+    /* width: 60%; */
+    padding: 1rem;
+    flex-wrap: wrap;
+    margin: auto;
+
+}
+
+.tag-content-text {
+    display: inline-block;
+    margin-bottom: 3px;
+    line-height: 1.8rem;
+    color: rgb(94, 125, 209);
+    min-width: 3rem;
+    font-size: 0.9rem;
+    margin-right: 0.8rem;
+    border: 1px solid rgb(94, 125, 209);
+    text-align: center;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    border-radius: 1rem;
+    height: 2.3rem;
+}
+
+.tag-item{
+    width: 80%;
+    padding: 1rem;
+}
+
+.tag-item-wrap{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    /* width: 60%; */
+    padding: 1rem;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.tag-item-text{
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    color: rgb(255, 255, 255);
+    min-width: 3rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-right: 0.8rem;
+    background-color: rgb(88, 121, 211);
+    text-align: center;
+    padding: 0.2rem 0.7rem 0.2rem 0.7rem;
+    border-radius: 1rem;
+    }
+
+
+    /* 반응형 */
+@media screen and (max-width: 789px){
+    .tag-content-wrap{
+        display: inline-flex;
+        flex-flow: row wrap;
+        width: 100%;
+        padding: 0.5rem;
+        min-height: 5rem;
+    }
+    .tag-item-wrap{
+        display: inline-flex;
+        flex-flow: row wrap;
+        width: 100%;
+        padding: 0.5rem;
+        height: auto;
+    }
+}

@@ -1,0 +1,85 @@
+
+.HeaderItem{
+    color: rgb(56, 55, 55);
+    font-size:17px;
+    font-weight: bold;
+  
+}
+
+.navToggle{
+    text-align: center;
+    font-size: 30px;
+    
+}
+.authLinkWarp{
+    margin-top: 10px;
+    font-size: 14px;
+    padding: 24px 24px 5px 24px;
+    display: flex;
+    justify-content: center;
+    min-width:150px;
+  
+}
+.authLinkWarp>li:hover{
+cursor:pointer;
+}
+
+.logout-txt{
+    width: 1.3px;
+    background-color: rgb(48, 46, 46);
+    right: 0;
+    top: 2px;
+    padding:0px;
+}
+
+.mypage-txt{
+    padding-right: 7px;
+    text-decoration: none;
+    color: rgb(56, 55, 55);
+}
+
+
+.HeaderLoginWrap{
+    display: flex;
+    justify-content: center;
+}
+.HeaderLogin{
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-width: 196.3px;
+    height: 40px;
+    border: 0;
+    padding: 20px;
+    border-radius: 27px;
+    background-color: #3366ff;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+
+
+@media screen and (max-width: 991.11px) {
+  
+    .HeaderItem{
+        color: rgb(85, 83, 83);
+        font-size: 14px;
+        font-weight: bold;
+      
+    }
+    .authLinkWarp{
+        color: rgb(85, 83, 83);
+        font-weight: bold;
+      
+    }
+}
+

@@ -1,0 +1,266 @@
+.BoardContainer {
+   background-color:#f0f0f0;
+   padding-bottom: 3rem; }
+
+.BoardSubContainer{
+padding-left: 2rem;
+}
+
+
+.BoardTitle{
+   padding :0.5em 0 0.5em 0;
+  
+}
+
+
+.BoardTitle>h1 {
+   position: relative;
+   color: #494747;
+   font-size: 30px;
+   line-height: 1;
+   font-weight: 600;
+   padding:0.8em 0.8em 0.8em 0.8em;
+
+}
+
+.BoardWapper{
+   border:1px solid #d6d6d6;
+   min-height:847.68px;
+}
+
+
+
+
+
+ 
+.filter-wrap{
+
+   height:100%;
+   padding:0.5rem 0.3rem 1rem 0.5rem;
+   background-color: #fff;
+   border-right: 1px solid #d6d6d6;
+   border-bottom:1px solid #d6d6d6;
+}
+.filter-search{
+  background: #fff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+  border: solid 1px #e0e0e0;
+  margin-bottom: 0.8rem;
+}
+.search-input{
+  font-size: 15px;
+  display: flex;
+  width: calc(100% - 18%);
+  height: 50px;
+  border: 0;
+  padding: 0 20px;
+}
+.search-input:focus{
+   outline:none;
+}
+#search-btn{
+   border: 0;
+   background: #fff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.filter-tit{
+  display: flex;
+  justify-content: center;
+  border: solid 1px #e0e0e0;
+  border-radius: 4px;
+  padding: 5px 10px;
+ 
+}
+.filter-txt{
+  font-size: 15px;
+  line-height: 2;
+  color: #3ba3c7;
+  font-weight: 500;
+  text-align: center;
+  
+}
+.filter-align
+{
+   display: flex;
+   flex-direction: column;
+   padding: 1rem;
+}
+.filter-align-tit{
+  color: rgba(0, 0, 0, 0.54);
+  padding: 0;
+  font-size: 1rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.00938em;
+}
+
+
+.filter-tech-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.filter-tech{
+  min-height: 6rem;
+  width: 100%;
+  flex-wrap: wrap;
+  display:inline-block;
+}
+
+.filter-tech-res{
+  width: 100%;
+  flex-wrap: wrap;
+  display:inline-block;
+}
+.filter-select{
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  /* width: 60%; */
+  padding: 1rem;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.filter-select-txt{
+  display: inline-block;
+  margin-bottom: 3px;
+  line-height: 1.8rem;
+  color: #fff;
+  /* width: 28%; */
+  font-size: 13px;
+  margin: 0.4rem;
+  background: #ffffff;
+  background-color: #2099bb;
+  text-align: center;
+  padding: 0.1em 0.3em 0.1em 0em;
+  border-radius: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  padding: 0 0.8rem 0 0.8rem;
+}
+
+
+
+.tech-txt{
+
+  display: inline-block;
+  margin-bottom: 3px;
+  line-height: 1.8rem;
+  color: #2099bb;
+  /* width: 28%; */
+  font-size: 13px;
+  margin: 0.4rem;
+  background: #ffffff;
+  border: 1.3px solid #b1b0b0;
+  text-align: center;
+  padding: 0.1em 0.3em 0.1em 0em;
+  border-radius: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  padding: 0 0.8rem 0 0.8rem;
+}
+
+.boardNextView{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.board-btn{
+  margin: 60px auto;
+  width: 12rem;
+  height: 3rem;
+  overflow: Hidden;
+  border-radius: 20px;
+  font-size: 16px;
+  color: #191919;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #a0a0a0;
+  background: transparent;
+}
+
+.board-next-default {
+  margin: 60px auto;
+  width: 14rem;
+  height: 3rem;
+  overflow: Hidden;
+  border-radius: 20px;
+  font-size: 16px;
+  color: #191919;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1280px){
+   
+.filter-wrap{
+   flex-direction: column;
+   border-right: 0px;
+   border-bottom: 1px solid #d6d6d6;
+}
+.filter-align{
+   float: left;
+   width: 100%;
+}
+.search-input{
+   width: 100%;
+}
+
+.filter-tech{
+  width: 100%;
+}
+
+
+
+.filter-tech-res{
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+.filter-wrap{
+    
+  flex-direction: column;
+  border-right: 0px;
+  border-bottom: 1px solid #d6d6d6;
+}
+.filter-align{
+  float: left;
+  width: 100%;
+}
+
+.filter-tech-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+
+
+
+
+}
+
+
+

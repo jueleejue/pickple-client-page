@@ -1,0 +1,224 @@
+
+.p-card-container{
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.p-card-wrap{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.p-card-left {
+    width: 63%;
+    min-height: 15rem;
+    padding: 1rem 0.5rem 0 1rem;
+}
+.p-card-right{
+    display: flex;
+    flex-direction: column;
+    width: 38%;
+    float: left;
+    height: auto;
+}
+.p-card-user {
+    width: 100%;
+    display: flex;
+    padding: 0.8em 0.35em 0.8em 0em;
+    font-size: 1.2rem;
+    color: rgb(8, 8, 8);
+    font-weight: 600;
+}
+
+.p-card-user>span{
+    position: relative;
+    display: block;
+    left: 10px;
+    background-color: #07b481;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: .2em;
+    padding:0.3rem 0.6rem;
+}
+
+.p-user-txt {
+    color: #2099bb;
+    margin-left: 0.3rem;
+}
+
+
+.p-card-introduce {
+    width: 100%;
+    min-height: 6em;
+    padding: 0.5em 0.8em 0.5em 0.5em;
+    white-space: pre-wrap;
+    word-wrap: break-all;
+    word-break: break-all;
+    font-size: 14px;
+    color: rgb(126, 118, 118);
+    height: 55%;
+}
+
+.p-card-tech {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 20%;
+}
+.p-card-txt {
+    display: inline-block;
+    margin-bottom: 3px;
+    line-height: 1.4rem;
+    color: #555555;
+    min-width: 3rem;
+    font-size: 0.85rem;
+    margin: 0.2rem;
+    font-weight: 540;
+    background: #e5e7e8;
+    text-align: center;
+    padding: 0.2em 0.8em 0.2em 0.8em;
+    border-radius: 3px;
+}
+
+/* 여기ㅜ터 */
+.p-additional-info {
+    display: flex;
+    height: 40%;
+    padding: 0rem 0.5rem 1rem 0.4rem;
+    /* display: flex; */
+    vertical-align: middle;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.p-additional-info>span{
+    font-size: 14px;
+    color: #5e5e5e;
+    font-weight: 540;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+
+}
+
+.p-additional-detail {
+    height: 40%;
+    margin: 1rem 0.5rem 1rem 0rem;
+    display: flex;
+    border: solid 1px #3ba3c7;
+    border-radius: 4px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border-radius: 4px;
+}
+.p-additional-btn {
+    width: 100%;
+    display: flex;
+    font-size: 16px;
+    line-height: 2;
+    color: #5e5e5e;
+    font-weight: 550;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    /* border-radius: 5px; */
+}
+
+/* 여기까지 */
+.p-card-contact{
+    width: 100%;
+    padding: 0.8em 0.35em 0.3em 0.35em;
+    font-size: 1rem;
+    color: rgb(68, 67, 67);
+    font-weight: 600;
+    height: 20%;
+    line-height: 2;
+}
+
+ .p-contact-tit{
+     width: 100%;
+     padding-left: 1em;
+ }
+ .p-card-right-info{
+     width: 100%;
+     height: auto;
+     padding:1em;
+ }
+ .p-card-right-item{
+     display: flex;
+     width:100%;
+     padding: 0 1em 1em 1em;
+ }
+ .p-right-item-txt{
+    width:100%;
+    font-size: 14px;
+    padding: 0 0.3em 0 0.3em;
+    margin-left: 1.3em;
+    text-align: center;
+    line-height: 2;
+    font-weight: 550;
+    background-color: #fff;
+    border-radius: 10px;
+    border:1px solid rgb(218, 214, 214);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+ }
+
+ .p-card-auth-contact{
+    font-size: 0.8rem;
+    color: rgb(122, 122, 122);
+    font-weight: 600;
+    line-height: 2;
+    padding: 0.5em;
+
+}
+    
+@media screen and (max-width: 789px){
+   
+  
+ 
+    .p-card-container{
+        height:auto;
+    }
+    .p-card-wrap{
+        height: auto;
+        flex-direction: column;
+    }
+
+    .p-card-left {
+        width: 100%;
+        border-right: none;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-around;
+    }
+    .p-card-right{
+        width: 100%;
+        
+    }
+    .p-card-right {
+        width: 100%;
+        padding: 1rem 1.5rem 0rem 1.5rem;
+    }
+    .p-card-contact{
+        display: none;
+    }
+    .p-card-right-item{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .p-card-introduce{
+        height: 60%;
+    }
+    .p-card-tech{
+        height: 30%;
+    }
+   
+ }

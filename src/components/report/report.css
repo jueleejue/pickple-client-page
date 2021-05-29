@@ -1,0 +1,62 @@
+
+
+.report-tit-wrap{
+    display: flex;
+    width: 100%;;
+
+}
+
+
+.report-tit {
+    width: 88%;
+    /* height: 5rem; */
+    /* padding: 1rem; */
+    text-align: center;
+}
+.report-sub-tit{
+    font-size: 1rem;
+    color: rgb(70, 70, 71);
+    font-weight: 600;
+    padding:1rem;
+    border-top: 2px solid rgb(182, 182, 184);
+    
+}
+
+.report-tit>strong{
+    font-weight: bold;
+    color: rgb(70, 70, 71);
+    font-size: 1.5rem;
+    line-height: 4rem;
+}
+.report-body{
+    width: 100%;
+    padding: 1rem;
+
+}
+
+.btn-report-area{
+    width: 100%;
+    padding: 1.3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-report{
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+    font-size: 15px;
+    border-color: #3ba3c7;
+    background: #fff;
+    border: 1px solid #3ba3c7;
+    border-radius: 7px;
+    color: #3ba3c7;
+    font-weight: 600;
+    margin:0 0.5rem 0 0.5rem;
+}
+
+
+
+
+
+/* #dddee0 */
