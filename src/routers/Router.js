@@ -35,7 +35,7 @@ const Router = () => {
                 <Switch>
 
                            
-                            <Route path="/" exact component={MainPage} />
+                            <Route path="pickple/" exact component={MainPage} />
                            
                             <Route path="/board" exact component={BoardPage} />
                             <PrivateRoute path="/board/post" exact component={PostPage} />
