@@ -72,10 +72,11 @@
     color: #464647;
     white-space: pre-wrap; 
     word-wrap: break-all;
-    word-break: break-all;
+    /* word-break: break-all; */
     border: 1px solid rgb(172, 164, 164);
     border-radius: 5px;
 }
+
 
 .review-view-content-item {
     display: flex;

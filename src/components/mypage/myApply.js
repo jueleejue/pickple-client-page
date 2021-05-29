@@ -16,7 +16,7 @@ const MyApply=({myapplys})=>{
     
     
     const  deleteApply=(applyId)=> {
-        if (window.confirm("삭제하시겠습니까? 삭제 시 해당 모집글에 재지원이 불가능합니다.")) {
+        if (window.confirm("삭제하시겠습니까? 삭제 시 해당 모집글에 재지원이 불가능 합니다.")) {
                 const apply={applyId:applyId}
                 dispatch({
                         type: APPLY.APPLY_DELETE_REQUEST,

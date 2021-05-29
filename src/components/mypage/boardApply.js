@@ -126,66 +126,82 @@ const RecApply=({myboardusers,boarduserloading,boardId})=>{
                                                 {myboardusers.accountName}
                                                 </strong>
                                          </div>
-                                    
-                                        <div className="mypage-user-content-txt">
-                                                {myboardusers.profileIntroduce}
+
+                                        {myboardusers.accountIsDeleted?
+                                         <div className="mypage-user-content-txt"
+                                         style={{fontWeight:"550" ,color:"#e73535"
+                                        ,textOverflow:"inherit",overflow:"inherit"
+                                        }}
+                                         >
+                                        * 탈퇴한 사용자로서 정보 조회가 불가능한 점 양해 부탁드립니다.
+                                        </div>:
+                                         <div className="mypage-user-content-txt">
+                                         {myboardusers.profileIntroduce}
                                         </div>
+                                        }
+                                       
                                 </div>
-                       
-                               <div className="mypage-user-content-right">
-                                    <div className="mypage-user-contract-wrap">
-                                                <div className="mypage-user-contract-state">
-                                                        {myboardusers.isContracted===1?<strong>승인</strong>:
-                                                        <div className="mypage-user-contract-btn" 
-                                                        onClick={()=>Contract(myboardusers.applyId)}>
-
-                                                                승인하기</div>
-                                                        }
-
-                                                </div>
-                                               
-                                                <div className="mypage-user-contract-profile" onClick={()=>profileClick(myboardusers.profileId)}>
-                                                        <strong>프로필 보기</strong>
-                                                </div>
-                                               
                                 
-                                    </div>      
+                                {/* 여기--- */}
 
-                                    <div className="mypage-user-after-wrap">
-                                            {myboardusers.isContracted!==1?
-                                            <div className="mypage-user-after-none" >* 승인 후 활성화 됩니다.</div>
-                                            
-                                            :
-                                            myboardusers.reviewState==="BEFORE"?
-                                            <div className="mypage-user-review-wrap">
-                                                    <div className="mypage-user-after-review" onClick={()=>reviewForm(myboardusers.applyId)}>
-                                                         <strong>리뷰작성 </strong>
-                                                    </div>
-                                                    
-                                                    <div className="mypage-user-review-state">
-                                                         <strong>{reviewrResult(myboardusers.reviewState)}</strong>
-                                                    </div>
-                                                    
-                                            </div>
-                                            
-                                            :
-                                            <div className="mypage-user-review-wrap">
-                                                    
-                                                <div className="mypage-user-after-review" onClick={()=>reviewDetail(myboardusers.applyId)}>
-                                                        <strong>리뷰보기</strong>
-                                                </div>
-                                                <div className="mypage-user-review-state">
-                                                {reviewrResult(myboardusers.reviewState)}
-                                                </div>
-                                                
-                                            </div>
-                                            
+                                {myboardusers.accountIsDeleted?"":
+                                  <div className="mypage-user-content-right">
+                                  <div className="mypage-user-contract-wrap">
+                                              <div className="mypage-user-contract-state">
+                                                      {myboardusers.isContracted===1?<strong>승인</strong>:
+                                                      <div className="mypage-user-contract-btn" 
+                                                      onClick={()=>Contract(myboardusers.applyId)}>
 
-                                            }
-                                    </div>  
+                                                              승인하기</div>
+                                                      }
 
-                                </div>
+                                              </div>
+                                             
+                                              <div className="mypage-user-contract-profile" onClick={()=>profileClick(myboardusers.profileId)}>
+                                                      <strong>프로필 보기</strong>
+                                              </div>
+                                             
+                              
+                                  </div>      
 
+                                  <div className="mypage-user-after-wrap">
+                                          {myboardusers.isContracted!==1?
+                                          <div className="mypage-user-after-none" >* 승인 후 활성화 됩니다.</div>
+                                          
+                                          :
+                                          myboardusers.reviewState==="BEFORE"?
+                                          <div className="mypage-user-review-wrap">
+                                                  <div className="mypage-user-after-review" onClick={()=>reviewForm(myboardusers.applyId)}>
+                                                       <strong>리뷰작성 </strong>
+                                                  </div>
+                                                  
+                                                  <div className="mypage-user-review-state">
+                                                       <strong>{reviewrResult(myboardusers.reviewState)}</strong>
+                                                  </div>
+                                                  
+                                          </div>
+                                          
+                                          :
+                                          <div className="mypage-user-review-wrap">
+                                                  
+                                              <div className="mypage-user-after-review" onClick={()=>reviewDetail(myboardusers.applyId)}>
+                                                      <strong>리뷰보기</strong>
+                                              </div>
+                                              <div className="mypage-user-review-state">
+                                              {reviewrResult(myboardusers.reviewState)}
+                                              </div>
+                                              
+                                          </div>
+                                          
+
+                                          }
+                                  </div>  
+
+                              </div>
+
+                                }
+
+                             
                            </Fragment>
                            
                            
