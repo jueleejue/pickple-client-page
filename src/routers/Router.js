@@ -30,7 +30,7 @@ import MyBookMark from "../pages/myBookmarkPage"
 const Router = () => {
   return (
     <Fragment>
-      <Router basename="/pickple">
+      
         <Header/>
                 <Switch>             
                             <Route path="/" exact component={MainPage} />
@@ -57,7 +57,6 @@ const Router = () => {
                             <PrivateRoute path="/MyPage/board/apply/:id" exact component={BoardApply} />         
                 </Switch>
         <Footer/>
-        </Router>
   </Fragment>
   );
 }
