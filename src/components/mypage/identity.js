@@ -163,7 +163,6 @@ const Identity=()=>{
                         <span>📖</span>
                         <span>프로필</span>
                     </div>
-                    
                         {isprofile()}
                 </div>
             </div>
