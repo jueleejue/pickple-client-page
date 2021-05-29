@@ -30,12 +30,10 @@ import MyBookMark from "../pages/myBookmarkPage"
 const Router = () => {
   return (
     <Fragment>
-    
+      <Router basename="/pickple">
         <Header/>
-                <Switch>
-
-                           
-                            <Route path="pickple/" exact component={MainPage} />
+                <Switch>             
+                            <Route path="/" exact component={MainPage} />
                            
                             <Route path="/board" exact component={BoardPage} />
                             <PrivateRoute path="/board/post" exact component={PostPage} />
@@ -59,6 +57,7 @@ const Router = () => {
                             <PrivateRoute path="/MyPage/board/apply/:id" exact component={BoardApply} />         
                 </Switch>
         <Footer/>
+        </Router>
   </Fragment>
   );
 }
