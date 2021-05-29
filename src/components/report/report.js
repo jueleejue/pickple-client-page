@@ -9,8 +9,8 @@ import {UseConfirm} from "../../util/confirm"
 
  const Report=({boardId,useOpen}) =>{
  
-  var title ='※모집글 신고사항 제목 : \n \n Ex) 잘못된 정보 기재,사기 피해  등 \n \n '
-  var content='※상세한 신고 내용 \n\n  Ex) 부정확한 연락 수단 기재 등 '
+  var title ='※모집글 신고사항 제목 : \n \n Ex) 잘못된 정보 기재,사기 피해 등 \n \n '
+  var content='※상세한 신고 내용: \n\n  Ex) 부 정확한 연락 수단 기재 등 '
 
     const [open,setOpen]=useOpen;
     const [text,setText]=useState(title+content)
