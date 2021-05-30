@@ -7,7 +7,7 @@ import ProfilePage from "../pages/profilePage"
 import PostPage from "../pages/postPage"
 import LoginPage from "../components/user/login"
 import ProfileformPage from "../pages/profileformPage"
-import { Switch, Route} from "react-router-dom";
+import { Switch, Route,BrowserRouter} from "react-router-dom";
 import BoardDetail from "../components/board/cardDetail.js"
 import callBackPage from "../pages/callBackPage"
 import ProfileEditPage from "../pages/profileEditPage"
@@ -19,8 +19,8 @@ import Identity from "../pages/IdentityPage"
 import MyBoard from "../pages/myBoardPage"
 import BoardApply from "../pages/boardApplyPage"
 import MyBookMark from "../pages/myBookmarkPage"
-
-
+import dotenv from "dotenv";
+dotenv.config();
 
 
 
@@ -30,6 +30,7 @@ import MyBookMark from "../pages/myBookmarkPage"
 const Router = () => {
   return (
     <Fragment>
+      <BrowserRouter basename={process.env.REACT_APP_BASIC_URI}>
         <Header/>
                 <Switch>
                   {/* <PrivateRoute exact path="/" component={LoginPage}/> */}
@@ -58,6 +59,7 @@ const Router = () => {
                             <PrivateRoute path="/MyPage/board/apply/:id" exact component={BoardApply} />         
                 </Switch>
         <Footer/>
+      </BrowserRouter>
   </Fragment>
   );
 }

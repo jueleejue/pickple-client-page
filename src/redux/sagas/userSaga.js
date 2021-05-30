@@ -5,7 +5,6 @@ import { push } from "connected-react-router";
 import { Link } from "react-router-dom";
 
 
-
 const loginUserAPI = (payload) => {
  
   const config = {
@@ -89,8 +88,8 @@ function* logout(action) {
     yield put({
       type: USER.USER_LOGOUT_SUCCESS,
     });
-  
     yield put(push("/")); 
+    // yield put(push("/")); 
   } catch (e) {
     yield put({
       type: USER.USER_LOGOUT_FAILURE,

@@ -41,7 +41,9 @@
     "start": "react-scripts start",
     "build": "env-cmd -f .env react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy" : "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -61,7 +63,7 @@
       "last 1 safari version"
     ]
   }, 
-
+  "homepage": "https://hyuuunji.github.io/pickple/",
   "devDependencies": {
     "babel-plugin-transform-remove-console": "^6.9.4",
     "eslint-plugin-react-hooks": "^4.2.0"
