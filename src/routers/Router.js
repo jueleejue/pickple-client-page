@@ -30,22 +30,23 @@ import MyBookMark from "../pages/myBookmarkPage"
 const Router = () => {
   return (
     <Fragment>
-      
         <Header/>
-                <Switch>             
+                <Switch>
+                  {/* <PrivateRoute exact path="/" component={LoginPage}/> */}
+                          
                             <Route path="/" exact component={MainPage} />
-                           
+                            {/* boardformPage */}
                             <Route path="/board" exact component={BoardPage} />
                             <PrivateRoute path="/board/post" exact component={PostPage} />
                             <PrivateRoute path="/board/edit/:id" exact component={BoardEditPage} />
                             <PrivateRoute path="/board/:id" exact component={BoardDetail} />
                           
-                           
+                            {/* profileformPage */}
                             <Route path="/profile" exact component={ProfilePage} />
-                            
+                            {/* user */}
                             <Route path="/Naver/Callback" exact component={callBackPage} />
                             <Route path="/login" exact component={LoginPage} />
-                          
+                            {/* mypage*/}
                             <PrivateRoute path="/profile/post/:id" exact component={ProfileformPage} />
                             <PrivateRoute path="/Mypage" exact component={Identity} /> 
                             <PrivateRoute path="/Mypage/profile" exact component={Identity} />

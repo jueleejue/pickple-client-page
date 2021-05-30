@@ -95,7 +95,7 @@ import { push } from "connected-react-router";
                 payload:result.data
             })
             alert("업로드 성공")
-            window.location.href="/board"
+            yield put(push("/board"));
             } catch (e) {
                 if(e.response.status===403) 
                 {
@@ -172,7 +172,7 @@ import { push } from "connected-react-router";
                 payload:result.data
             })
             alert("삭제를 성공했습니다.")
-            window.location.href="/board"
+            yield put(push("/board"));
             } catch (e) {
                 if(e.response.status===403) 
                 {

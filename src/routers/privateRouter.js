@@ -3,7 +3,7 @@ import { Redirect, Route } from 'react-router-dom';
 
 function PrivateRoute ({ component: Component, ...rest }) {
     return (
-        <Route
+        <Route 
             {...rest}
             render = {props => 
                 localStorage.getItem('token')?(

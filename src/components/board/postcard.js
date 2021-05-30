@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import "./postcard.css"
 import moment from 'moment';
-
+import { Link } from "react-router-dom";
 
 
 
@@ -37,7 +37,7 @@ const PostCard=({post})=>{
                         
                       <div key={post.boardId} className="col p-2 CardContainer">
                           
-                      <a href={`/board/${post.boardId}`} className="text-dark text-decoration-none">  
+                      <Link to={`/board/${post.boardId}`} className="text-dark text-decoration-none">  
 
                             <div  style={{boxShadow:"none"}}>
                             <div className="CardWarpper">
@@ -93,7 +93,7 @@ const PostCard=({post})=>{
 
                             </div>
                           </div> 
-                        </a>
+                        </Link>
                         </div>
                     )
                 }) :

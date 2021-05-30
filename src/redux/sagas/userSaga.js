@@ -2,11 +2,12 @@ import axios from "axios";
 import { call, put, takeEvery, all, fork } from "redux-saga/effects";
 import USER from '../../actions/userAction';
 import { push } from "connected-react-router";
+import { Link } from "react-router-dom";
 
 
 
 const loginUserAPI = (payload) => {
-
+ 
   const config = {
     headers: {
       "Content-Type": "application/json",
@@ -36,7 +37,7 @@ function* loginUser(action) {
       payload: e.response,
     });
     
-    yield put(push("/")); 
+    yield put(push("/pickple")); 
     alert("로그인을 실패했습니다.")
    
   }
@@ -60,6 +61,7 @@ function* accountUser(action) {
       type: USER.USER_ACCOUNT_SUCCESS, 
       payload: result.data.data.token,  
     });
+    <Link to={"/"}/>
     yield put(push("/")); 
 
 
@@ -87,6 +89,7 @@ function* logout(action) {
     yield put({
       type: USER.USER_LOGOUT_SUCCESS,
     });
+  
     yield put(push("/")); 
   } catch (e) {
     yield put({

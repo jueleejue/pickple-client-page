@@ -20,11 +20,11 @@ const MyBoard=({myboards})=>{
                               <div  key={index} className="mypage-board-content-item">
                             
                                 <div className="mypage-board-content-left">
-                                <a href={`/board/${myboards.boardId}`} className="text-dark text-decoration-none" style={{width:"100%"}}>
+                                <Link to={`/board/${myboards.boardId}`} className="text-dark text-decoration-none" style={{width:"100%"}}>
                                     <Tooltip title="클릭시 해당 글 이동" placement='top'>
                                         <div className="mypage-board-left-tit">{myboards.title}</div>
                                     </Tooltip>    
-                                </a>
+                                </Link>
                                     <div className="mypage-board-left-date">
                                             <div className="mypage-board-date-sub">
                                                 <div  className="mypage-board-date-txt">마감일</div >

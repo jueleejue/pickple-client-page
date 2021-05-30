@@ -6,6 +6,7 @@ import Reportview from "../report/reportview"
 import { Fragment } from 'react'
 import { useDispatch, useSelector } from "react-redux";
 import DefaultPage from "../../util/defaultPage"
+import { Link } from "react-router-dom";
 
 const MyReport=({myreports})=>{
 
@@ -56,9 +57,9 @@ const MyReport=({myreports})=>{
                                :
                                 <div className="mypage-report-bottom-wrap">
                                     <div className="mypage-report-bottom-detail" onClick={()=>reportDetail(myreports.reportId)}>상세보기</div>
-                                    <a  href={`/board/${myreports.boardId}`} >
+                                    <Link  to={`/board/${myreports.boardId}`} >
                                     <button className="mypage-report-bottom-next" >바로가기</button>
-                                    </a>
+                                    </Link>
                                 </div>
                                }
                               

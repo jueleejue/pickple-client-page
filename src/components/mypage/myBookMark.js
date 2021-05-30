@@ -4,7 +4,7 @@ import {IconButton} from '@material-ui/core';
 import { Container } from 'reactstrap';
 import { Fragment } from 'react';
 import BookmarkIcon from '@material-ui/icons/Bookmark';
-
+import { Link } from "react-router-dom";
 
 const MyBookMark=({mybookmarks})=>{
   
@@ -39,11 +39,11 @@ const MyBookMark=({mybookmarks})=>{
                                   :
                                   <Fragment>
                                       <div className="mypage-bookmark-content-align">
-                                          <a href={`/board/${mybookmarks.boardId}`} className="text-dark text-decoration-none">
+                                          <Link to={`/board/${mybookmarks.boardId}`} className="text-dark text-decoration-none">
                                             <div className="mypage-bookmark-content-tit">
                                               {mybookmarks.boardTitle}
                                             </div>
-                                          </a>
+                                          </Link>
                                       <div className="mypage-bookmark-content-state">
                                         <IconButton><BookmarkIcon/></IconButton>
                                       </div>
