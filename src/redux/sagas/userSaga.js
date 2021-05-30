@@ -2,7 +2,7 @@ import axios from "axios";
 import { call, put, takeEvery, all, fork } from "redux-saga/effects";
 import USER from '../../actions/userAction';
 import { push } from "connected-react-router";
-import { Link } from "react-router-dom";
+
 
 
 const loginUserAPI = (payload) => {
@@ -60,7 +60,6 @@ function* accountUser(action) {
       type: USER.USER_ACCOUNT_SUCCESS, 
       payload: result.data.data.token,  
     });
-    <Link to={"/"}/>
     yield put(push("/")); 
 
 
@@ -89,7 +88,6 @@ function* logout(action) {
       type: USER.USER_LOGOUT_SUCCESS,
     });
     yield put(push("/")); 
-    // yield put(push("/")); 
   } catch (e) {
     yield put({
       type: USER.USER_LOGOUT_FAILURE,

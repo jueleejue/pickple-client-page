@@ -7,7 +7,7 @@ import ProfilePage from "../pages/profilePage"
 import PostPage from "../pages/postPage"
 import LoginPage from "../components/user/login"
 import ProfileformPage from "../pages/profileformPage"
-import { Switch, Route,BrowserRouter} from "react-router-dom";
+import { Switch, Route} from "react-router-dom";
 import BoardDetail from "../components/board/cardDetail.js"
 import callBackPage from "../pages/callBackPage"
 import ProfileEditPage from "../pages/profileEditPage"
@@ -30,7 +30,6 @@ dotenv.config();
 const Router = () => {
   return (
     <Fragment>
-      <BrowserRouter basename={process.env.REACT_APP_BASIC_URI}>
         <Header/>
                 <Switch>
                   {/* <PrivateRoute exact path="/" component={LoginPage}/> */}
@@ -59,7 +58,6 @@ const Router = () => {
                             <PrivateRoute path="/MyPage/board/apply/:id" exact component={BoardApply} />         
                 </Switch>
         <Footer/>
-      </BrowserRouter>
   </Fragment>
   );
 }
