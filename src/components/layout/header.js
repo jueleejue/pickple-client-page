@@ -7,7 +7,7 @@ const Header = () =>{
 
    const  HeaderType = () => {
     
-        if ("/pickple/login" ===window.location.pathname
+        if ("/login" ===window.location.pathname
         ||"/Naver/Callback"===window.location.pathname){
           return null;
         } else {

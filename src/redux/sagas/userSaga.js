@@ -35,8 +35,7 @@ function* loginUser(action) {
       type: USER.USER_LOGIN_FAILURE,
       payload: e.response,
     });
-    
-    yield put(push("/pickple")); 
+    yield put(push("/")); 
     alert("로그인을 실패했습니다.")
    
   }

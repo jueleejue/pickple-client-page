@@ -133,7 +133,7 @@ const RecApply=({myboardusers,boarduserloading,boardId})=>{
                                         ,textOverflow:"inherit",overflow:"inherit"
                                         }}
                                          >
-                                        * 탈퇴한 사용자로서 정보 조회가 불가능한 점 양해 부탁드립니다.
+                                        * 탈퇴한 사용자
                                         </div>:
                                          <div className="mypage-user-content-txt">
                                          {myboardusers.profileIntroduce}

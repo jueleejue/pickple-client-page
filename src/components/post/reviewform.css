@@ -136,6 +136,10 @@
     .review-form-content-sub{
         width: 90%;
     }
+    .btn-review-form{
+        font-size: 13px;
+        width: 50%;
+    }
     
 
 }

@@ -43,6 +43,10 @@ const ReviewView=({useOpen,reportdetails})=>{
           return(
             <div className="report-view-state-txt">사용자 주의</div>
           )
+       case "NO_PROBLEM":
+          return(
+            <div className="report-view-state-txt">문제 없음</div>
+          )
       default:
             return(
               <Fragment></Fragment>
