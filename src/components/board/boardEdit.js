@@ -106,6 +106,7 @@ const BoardEdit=(req) =>{
           <div className="PostContainer">
           <div className="PostSubTitle">
                       <h3>제목을 입력해주세요.
+                      <strong style={{fontSize:"13px",color:"#b6b7b9"}}> [최대 50]</strong>
                       <strong className="PostCheck"> *</strong>
                       </h3>
                   </div>
@@ -115,6 +116,9 @@ const BoardEdit=(req) =>{
                     placeholder="제목을 입력해주세요."
                     rows={1}
                     fullWidth
+                    inputProps={{
+                      maxLength: 50,
+                    }}
                     value={form.title?form.title:""}
                     onChange={onChange}
                     variant="outlined"/>
@@ -217,6 +221,7 @@ const BoardEdit=(req) =>{
                {/* 상세내용  */}
                   <div className="PostSubTitle" style={{marginTop:"2.3rem"}}>
                     <h3>상세내용을 입력해주세요.
+                    <strong style={{fontSize:"13px",color:"#b6b7b9"}}> [최대 2000]</strong>
                     <strong className="PostCheck"> *</strong>
                     </h3>
                 </div>
@@ -226,6 +231,9 @@ const BoardEdit=(req) =>{
                     name="text"
                     multiline
                     rows={12}
+                    inputProps={{
+                      maxLength: 2000,
+                    }}
                     fullWidth
                     onChange={onChange}
                     value={form.text}

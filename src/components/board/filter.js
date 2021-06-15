@@ -190,7 +190,7 @@ const Filter=({tags,usePage}) =>{
          
             <Grid item xs={12} >
                 <div className="filter-search">
-                    <Tooltip title="제목,내용으로 검색 가능" placement='right'>
+                    <Tooltip title="제목,내용,작성자 이름으로 검색 가능" placement='right'>
                         <input className="search-input"placeholder="Search"
                         value={input}
                         onChange={(e)=>setInput(e.target.value)}

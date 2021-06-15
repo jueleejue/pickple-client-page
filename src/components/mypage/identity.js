@@ -136,7 +136,7 @@ const Identity=()=>{
                         <div className="mypage-profile-left-bottom-icon">
     
                          <HowToRegIcon style={{fontSize:"2.5rem"}}/>
-                         <span>{users.name} 님</span>
+                         <span>{users.name} </span>
                         </div>
     
                         <div className="mypage-profile-left-bottom-right">

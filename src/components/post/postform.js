@@ -98,6 +98,7 @@ const Postform=() =>{
           <div className="PostContainer">
           <div className="PostSubTitle">
                       <h3>제목을 입력해주세요.
+                      <strong style={{fontSize:"13px",color:"#b6b7b9"}}> [최대 50]</strong>
                       <strong className="PostCheck"> *</strong>
                       </h3>
                   </div>
@@ -107,6 +108,9 @@ const Postform=() =>{
                     placeholder="제목을 입력해주세요."
                     variant="outlined"
                     rows={1}
+                    inputProps={{
+                      maxLength: 50,
+                    }}
                     fullWidth
                     value={form.title}
                     onChange={onChange}/>
@@ -206,6 +210,7 @@ const Postform=() =>{
                {/* 상세내용  */}
                   <div className="PostSubTitle" style={{marginTop:"2.3rem"}}>
                     <h3>상세내용을 입력해주세요.
+                    <strong style={{fontSize:"13px",color:"#b6b7b9"}}> [최대 2000]</strong>
                     <strong className="PostCheck"> *</strong>
                     </h3>
                 </div>
@@ -216,6 +221,9 @@ const Postform=() =>{
                     multiline
                     rows={12}
                     fullWidth
+                    inputProps={{
+                      maxLength: 2000,
+                    }}
                     onChange={onChange}
                     value={form.text}
                     variant="outlined"/>

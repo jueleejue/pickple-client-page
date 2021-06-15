@@ -193,7 +193,7 @@ const Pfilter=({tags,usePage}) =>{
         <div className="p-filter-wrap" p={2} >
             <Grid item xs={12} >
                 <div className="p-filter-search">
-                    <Tooltip title="제목,내용으로 검색 가능" placement='right'>
+                    <Tooltip title="이름,카카오ID,소개글로 검색 가능" placement='right'>
                         <input className="p-search-input"placeholder="Search"
                             value={input}
                             onChange={(e)=>setInput(e.target.value)}

@@ -59,7 +59,7 @@ function* mypagerecuserload (action){
             type:APPLY.APPLY_BOARD_USER_FAILURE,
             payload: e,
           });
-          yield put(push("/"));
+          yield put(push("/pickple"));
     }
     }
 

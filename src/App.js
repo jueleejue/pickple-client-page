@@ -4,8 +4,8 @@ import { ConnectedRouter } from "connected-react-router";
 import store, { history } from "./store/store";
 import Router from "./routers/Router";
 import "bootstrap/dist/css/bootstrap.min.css"
-import { hot } from 'react-hot-loader'
 import "./assets/css/reset.css"
+import 'raf/polyfill';
 
 const App = () => {
 
@@ -13,11 +13,9 @@ const App = () => {
     <Provider store={store}>
     <ConnectedRouter history={history}>
       <Router/>
-
-      
     </ConnectedRouter>
   </Provider>
   )
 };
  
-    export default hot(module)(App);
+export default (App);

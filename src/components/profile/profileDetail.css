@@ -121,26 +121,33 @@
 .p-detail-review{
     width: 100%;
     height: 15em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .p-datail-content-data
 {
-      /* padding: 0.2em 0.8em 0.2em 0.8em; */
-      border-radius: 5px;
-      border: 1px solid #c7c5c5;
-      height: 75%;
-      font-size: 14px;
-      white-space: pre-wrap;
-      word-wrap: break-all;
-      word-break: break-all;
-      color: #696666;
-      padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #c7c5c5;
+    height: 80%;
+    font-size: 14px;
+    white-space: pre-wrap;
+    word-wrap: break-all;
+    word-break: break-all;
+    color: #696666;
+    padding: 0.5rem;
+    line-height: 1.4;
+    text-overflow: ellipsis;
+    overflow: auto;
+    /* display: inline-block; */
+    width: 100%;
 }
 .p-datail-review-data{
     display: flex;
     padding: 0.2em 0.8em 0.2em 0;
     border-radius: 5px;
-    height: 75%;
+    height: 68%;
     font-size: 14px;
     color: #696666;
     overflow: auto;

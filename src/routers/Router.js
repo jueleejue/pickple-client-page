@@ -19,8 +19,6 @@ import Identity from "../pages/IdentityPage"
 import MyBoard from "../pages/myBoardPage"
 import BoardApply from "../pages/boardApplyPage"
 import MyBookMark from "../pages/myBookmarkPage"
-import dotenv from "dotenv";
-dotenv.config();
 
 
 
@@ -31,9 +29,7 @@ const Router = () => {
   return (
     <Fragment>
         <Header/>
-                <Switch>
-                  {/* <PrivateRoute exact path="/" component={LoginPage}/> */}
-                          
+                <Switch>  
                             <Route path="/" exact component={MainPage} />
                             {/* boardformPage */}
                             <Route path="/board" exact component={BoardPage} />

@@ -75,12 +75,14 @@
     padding:5rem 0.5rem 5rem 0.5rem;
 }
 
-.mypage-profile-left-bottom-icon>span{
-    font-size: 13px;
+.mypage-profile-left-bottom-icon>span {
+    font-size: 15px;
     text-align: center;
     line-height: 2;
     font-weight: 550;
+    color: #00a878;
 }
+
 .mypage-profile-left-bottom-info{
     width: 70%;
     display: flex;
