@@ -11,7 +11,7 @@ const recapplyloadAPI = (payload) =>{
           "Content-Type": "application/json",
           "X-AUTH-TOKEN":localStorage.getItem("token"),
         },
-      };
+    };
     return axios.get(`/api/v1/apply/my/${payload}`,config);
 }
 
