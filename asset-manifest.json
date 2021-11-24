@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/pickple-client-page/static/css/main.a3361edb.chunk.css",
+    "main.js": "/pickple-client-page/static/js/main.ba518269.chunk.js",
+    "main.js.map": "/pickple-client-page/static/js/main.ba518269.chunk.js.map",
+    "runtime-main.js": "/pickple-client-page/static/js/runtime-main.95e030de.js",
+    "runtime-main.js.map": "/pickple-client-page/static/js/runtime-main.95e030de.js.map",
+    "static/css/2.323c88ee.chunk.css": "/pickple-client-page/static/css/2.323c88ee.chunk.css",
+    "static/js/2.426128a2.chunk.js": "/pickple-client-page/static/js/2.426128a2.chunk.js",
+    "static/js/2.426128a2.chunk.js.map": "/pickple-client-page/static/js/2.426128a2.chunk.js.map",
+    "static/js/3.25063d53.chunk.js": "/pickple-client-page/static/js/3.25063d53.chunk.js",
+    "static/js/3.25063d53.chunk.js.map": "/pickple-client-page/static/js/3.25063d53.chunk.js.map",
+    "index.html": "/pickple-client-page/index.html",
+    "static/css/2.323c88ee.chunk.css.map": "/pickple-client-page/static/css/2.323c88ee.chunk.css.map",
+    "static/css/main.a3361edb.chunk.css.map": "/pickple-client-page/static/css/main.a3361edb.chunk.css.map",
+    "static/js/2.426128a2.chunk.js.LICENSE.txt": "/pickple-client-page/static/js/2.426128a2.chunk.js.LICENSE.txt",
+    "static/media/login.css": "/pickple-client-page/static/media/login_back1.fac6584b.png",
+    "static/media/main.css": "/pickple-client-page/static/media/main.8136e35e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.95e030de.js",
+    "static/css/2.323c88ee.chunk.css",
+    "static/js/2.426128a2.chunk.js",
+    "static/css/main.a3361edb.chunk.css",
+    "static/js/main.ba518269.chunk.js"
+  ]
+}
