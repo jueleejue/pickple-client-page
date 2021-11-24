@@ -1,5 +1,5 @@
 {
-  "homepage": "https://jueleejue.github.io/pickple-client-page/",
+  "homepage": "http://jueleejue.github.io/pickple-client-page/",
   "name": "client",
   "version": "0.1.0",
   "private": true,
@@ -44,7 +44,7 @@
     "build": "react-scripts build ",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy":"npm run start",
+    "predeploy":"npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
